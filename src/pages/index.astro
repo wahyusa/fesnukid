@@ -4,37 +4,36 @@ import Nav from "../components/Nav.astro";
 ---
 
 <Layout>
-	<div class="grid items-start bg-[url(assets/bg.jpg)] min-h-dvh">
+	<div
+		class="grid items-start bg-[url('assets/bg.jpg')] bg-position-[center_top_57px] bg-no-repeat min-h-dvh relative z-50
+               
+               min-[1920px]:w-[2560px] min-[1920px]:left-1/2 min-[1920px]:mr-[-50%] min-[1920px]:-translate-x-1/2"
+	>
 		<Nav />
-		<main class="text-7xl font-bold p-4 max-w-4xl mx-auto pt-14.25">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-			sapiente ipsum ducimus! Autem earum animi rerum veniam sint debitis
-			exercitationem fuga sit, sapiente totam iure deleniti delectus
-			libero, accusamus inventore.Lorem ipsum dolor sit amet consectetur
-			adipisicing elit. Eaque sapiente ipsum ducimus! Autem earum animi
-			rerum veniam sint debitis exercitationem fuga sit, sapiente totam
-			iure deleniti delectus libero, accusamus inventore.Lorem ipsum dolor
-			sit amet consectetur adipisicing elit. Eaque sapiente ipsum ducimus!
-			Autem earum animi rerum veniam sint debitis exercitationem fuga sit,
-			sapiente totam iure deleniti delectus libero, accusamus
-			inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			Eaque sapiente ipsum ducimus! Autem earum animi rerum veniam sint
-			debitis exercitationem fuga sit, sapiente totam iure deleniti
-			delectus libero, accusamus inventore.Lorem ipsum dolor sit amet
-			consectetur adipisicing elit. Eaque sapiente ipsum ducimus! Autem
-			earum animi rerum veniam sint debitis exercitationem fuga sit,
-			sapiente totam iure deleniti delectus libero, accusamus
-			inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			Eaque sapiente ipsum ducimus! Autem earum animi rerum veniam sint
-			debitis exercitationem fuga sit, sapiente totam iure deleniti
-			delectus libero, accusamus inventore.Lorem ipsum dolor sit amet
-			consectetur adipisicing elit. Eaque sapiente ipsum ducimus! Autem
-			earum animi rerum veniam sint debitis exercitationem fuga sit,
-			sapiente totam iure deleniti delectus libero, accusamus
-			inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			Eaque sapiente ipsum ducimus! Autem earum animi rerum veniam sint
-			debitis exercitationem fuga sit, sapiente totam iure deleniti
-			delectus libero, accusamus inventore.
+		<main class="text-7xl font-bold pt-14.25">
+			<p class="max-w-4xl mx-auto p-4">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+				sapiente ipsum ducimus! Autem earum animi rerum veniam sint
+				debitis exercitationem fuga sit, sapiente totam iure deleniti
+				delectus libero, accusamus inventore.Lorem ipsum dolor sit amet
+				consectetur adipisicing elit.
+			</p>
+			<div
+				class="relative w-[clamp(100%,90vw,1280px)] mx-auto py-16 px-4 my-16 bg-white text-2xl
+            before:content-[''] before:absolute before:-top-12.5 before:left-0 before:w-full before:h-12.5 before:bg-[url('assets/divider_up.png')] before:bg-no-repeat before:bg-cover
+            after:content-[''] after:absolute after:-bottom-12.5 after:left-0 after:w-full after:h-12.5 after:bg-[url('assets/divider_down.png')] after:bg-no-repeat after:bg-cover"
+			>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+				blanditiis ipsum provident fugit expedita inventore tenetur
+				libero repudiandae cumque. Hic nam sunt sint quisquam delectus
+				illum aperiam architecto alias illo.
+			</div>
+			<p class="max-w-4xl mx-auto p-4">
+				Eaque sapiente ipsum ducimus! Autem earum animi rerum veniam
+				sint debitis exercitationem fuga sit, sapiente totam iure
+				deleniti delectus libero, accusamus inventore.Lorem ipsum dolor
+				sit amet consectetur
+			</p>
 		</main>
 	</div>
 </Layout>
